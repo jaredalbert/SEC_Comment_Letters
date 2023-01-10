@@ -1,7 +1,7 @@
 import pandas as pd 
 import numpy as np
 import matplotlib.pyplot as plt 
-import seaborn as sns
+
 
 
 df_agg = pd.read_csv('etd_data.csv')
@@ -33,6 +33,5 @@ plt.xlabel('Exchange')
 plt.xticks(rotation=90)
 plt.ylabel('Price Better than NBB or NBO')
 plt.text(10,10, 'Width represents the volume on that exchange')
-#df_for_hist.plot.bar(x=' Exchange', y='improvement_off_NBBO', colors = ['b','b','b','b','r','b','b','b','b','b','b','b','b','b','b'])
-#df_for_hist.plot.bar(x=' Exchange', y='sum_y')
+
 plt.show()
